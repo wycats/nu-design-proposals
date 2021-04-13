@@ -1,22 +1,20 @@
 # Primitives
 
-* _Boolean_: One of
-  * `true`
-  * `false`
-* _Integer_: An arbitrarily large integer \(other languages: "BigInt"\)
-* _Decimal_: An arbitrarily precise rational number \(other languages: "BigDecimal"\)
-* _String_: A sequence of Unicode characters \(represented as UTF-8\)
-* _Binary Data_: A blob of binary data
-* _Line_: A String that should be laid out as a block
-* _Column Path_: The representation of the path to data
-* _Glob Patterns_: The representation of a file pattern
-* _Date_: A date, time, and optional time zone
-* _Duration_: A length of time
-* _Range_: A sequence of values from start to finish \(optionally exclusive, optionally open-ended\)
-* _File Path_: A path to a file on the operating system
-* _File Size_: The size of a file in bytes
-
-### ~~Column Path~~**Symbol Path**
+| Type | Description | Aliases | Notes |
+| :--- | :--- | :--- | :--- |
+| Boolean | `true` or `false` |  |  |
+| Integer | An arbitrarily large integer | BigInt |  |
+| Decimal | An arbitrarily precise rational number | BigDecimal |  |
+| String | A sequence of UTF-8-encoded Unicode characters |  |  |
+| Binary Data | A sequence of bytes, representing binary data | ArrayBuffer |  |
+| Line | A String that should be laid out as a block | &lt;p&gt; |  |
+| Column Path | Representation of a path to data |  | ℹ Proposal Below |
+| Glob Pattern | The representation of a file pattern | Glob, Pattern | [Glob crate](https://docs.rs/glob/0.3.0/glob/struct.Pattern.html) |
+| Date | A date, time and time zone |  |  |
+| Duration | A length of time | Interval |  |
+| Range | A sequence of values from start to finish |  | Optionally exclusive optionally open-ended |
+| File Path | A path to a file on the operating system | Path, Pathname |  |
+| File Size | The size of a file in bytes |  | ℹ Proposal Below |
 
 
 
