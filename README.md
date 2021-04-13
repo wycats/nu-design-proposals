@@ -1,25 +1,21 @@
 # Initial page
 
-## Getting Super Powers
+## What is this?
 
-Becoming a super hero is a fairly straight forward process:
+This document is a proposal for Nu's stable semantics as of 1.0.
 
-```
-$ give me super-powers
-```
+### Current Status
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+This document is currently authored by Yehuda Katz, and is a draft intended to spark conversation.
 
-Once you're strong enough, save the world:
+Ultimately, I intend to evolve this draft into a concrete proposal with the help of the Nu community. 
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
+### Notation
+
+| Notation | Meaning |
+| :--- | :--- |
+| 🧪 | This is a proposed change from the current semantics |
+| 🪓 | This is proposed to be removed \(the chopping block\) |
 
 
 

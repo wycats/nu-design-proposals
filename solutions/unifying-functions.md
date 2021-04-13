@@ -40,9 +40,9 @@ Named ::= interleave(Flag, WS)
 #### Example
 
 ```elixir
-import { :Glob :FilePath :FileSize :Boolean :Date } from "std:types"
+import { Glob FilePath FileSize Boolean Date } from "std:types"
 
-variants :FileType {
+variants FileType {
   File
   Dir
   Symlink
@@ -55,24 +55,26 @@ variants :FileType {
   Unknown
 }
 
-row :File {
-  | name     | :FilePath |
-  | type     | :FileType |
-  | [target] | :FilePath |
-  | readonly | :Boolean  |
-  | size     | :FileSize |
-  | created  | :Date     |
-  | accessed | :Date     |
-  | modified | :Date     |
+row File {
+  | name     | type      |
+  | -------- | --------- |
+  | name     | FilePath |
+  | type     | FileType |
+  | [target] | FilePath |
+  | readonly | Boolean  |
+  | size     | FileSize |
+  | created  | Date     |
+  | accessed | Date     |
+  | modified | Date     |
 }
 
 def ls(
-  [$path]: $Glob      # a path to get the directory contents from
+  Glob [$path]       # a path to get the directory contents from
   --$all (-a)         # Show hidden files
   --$long (-l)        # List all available columns for each entry
   --$short-names (-s) # Only print the file names and not the path
   --$du (-d)          # Display the apparent directory size in place
                       # of the directory metadata size
-) yields :File
+) yields File
 ```
 

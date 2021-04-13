@@ -11,6 +11,13 @@
 * [Streams](values/streams.md)
 * [Value vs. Reference](values/value-vs.-reference.md)
 
+## High-Level IR <a id="hir"></a>
+
+---
+
+* [Core Expressions](core-expressions.md)
+* [Items](items.md)
+
 ## Functions <a id="function"></a>
 
 * [Signature](function/signature.md)
@@ -22,19 +29,36 @@
 
 ## Modules
 
-* [Untitled](modules/untitled.md)
+* [Module](modules/untitled.md)
+* [Items](modules/items.md)
 
 ## Syntax
 
 * [Whitespace](syntax/untitled.md)
 * [Phase 1: Reading](syntax/phase-1-reading.md)
 * [Phase 2: Expanding](syntax/phase-2-expanding/README.md)
+  * [Items](syntax/phase-2-expanding/items.md)
   * [Expressions](syntax/phase-2-expanding/expressions.md)
+  * [Shapes](syntax/phase-2-expanding/shapes.md)
+* [Baseline Expressions](syntax/baseline-expressions.md)
 
 ## Solutions
 
 * [Unifying Functions](solutions/unifying-functions.md)
 * [Modules](solutions/modules.md)
 
-## Expressions: Semantics <a id="expr-semantics"></a>
+## Cookbook Examples
+
+* [What is this?](cookbook-examples/what-is-this.md)
+* [Function Definitions](cookbook-examples/function-definitions.md)
+* [Declaration Files](cookbook-examples/declaration-files.md)
+* [Input and Output](cookbook-examples/input-and-output.md)
+* [Stream Methods vs. Iterating](cookbook-examples/stream-methods-vs.-iterating.md)
+* [Block Syntax](cookbook-examples/block-syntax.md)
+* [Modules](cookbook-examples/modules.md)
+* [Scripts](cookbook-examples/scripts.md)
+* [Shorthand Blocks](cookbook-examples/shorthand-blocks.md)
+* [Commands are Values](cookbook-examples/commands-are-values.md)
+* [Canonical Form](cookbook-examples/canonical-form.md)
+* [Type Syntax](cookbook-examples/type-syntax.md)
 
